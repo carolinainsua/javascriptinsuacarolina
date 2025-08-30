@@ -9,6 +9,59 @@
 </head>
 
 <body>
+    <div class="body">
+        <div class="desarrollo-proyecto">
+            <h1>Calculadora de anuncios para Meta ARG</h1>
+            <h2>Primera parte de la calculadora de META: Impuesto País</h2>
+            <p>Cuando uno utiliza Meta desde Argentina y realiza un anuncio, el cobro aplica automáticamente en nuestra
+                factura un impuesto del 60% extra sobre el valor que uno ingresa cómo presupuesto en la plataforma.
+                Me parece interesante, cómo primera instancia del proyecto de la calculadora, <strong>transformar el
+                    presupuesto que
+                    uno dispone, en el monto que realmente debería colocar en Meta</strong> para que el gasto no exceda
+                el
+                presupuesto.
+            </p>
+            <p>Denominaremos para poder diferenciarlos, <span class="keyword">PresupuestoReal</span> al
+                monto gastado total
+                en ARS, y
+                <span class="keyword">PresupuestoMeta</span> a aquél que figura en la plataforma.
+            </p>
+            <h2>Segunda parte de la calculadora de META: Agenda valores de anuncios previos y crear comparaciones de
+                resultados.</h2>
+            <p>La calculadora, tendrá una sección, donde el usuario, irá cargando los resultados de sus anuncios y
+                realizará
+                evaluaciones al respecto comparándolos entre ellos, dejando almacenado en Local Storage aquella
+                información
+                y sacando promedios.</p>
+        </div>
+        <div class="inputs-verticales">
+            <form class="input-presupuesto">
+                <label for="presupuesto-mesual">¿Cuál es tu presupuesto mensual?</label>
+                <input type="text" id="presupuesto-mesual">
+                <label for="cuantos-dias">¿Cuántos días querés que tu anuncio esté en circulación?</label>
+                <input type="text" id="cuantos-dias">
+                <input type="submit" value="Calcular">
+
+                <div id="resultado-presupuesto"></div>
+            </form>
+
+            <form class="input-datos-lastanuncio">
+                <label for="nombre-anuncio">Nombre del Anuncio:</label>
+                <input type="text" id="nombre-anuncio">
+                <label for="fecha-anuncio">Fecha del Anuncio:</label>
+                <input type="text" id="fecha-anuncio">
+                <label for="last-presupuesto">¿De cuánto fue el gasto, según Meta, de tu último anuncio?</label>
+                <input type="text" id="last-presupuesto">
+                <label for="last-alcance">¿Cuál fue el alcance de tu último anuncio?</label>
+                <input type="text" id="last-alcance">
+                <label for="last-clics">¿Cuántos clics recibiste en tu último anuncio?</label>
+                <input type="text" id="last-clic">
+                <input type="submit" value="Calcular">
+
+                <div id="resultado-calidad-anuncio"></div>
+            </form>
+        </div>
+    </div>
     <script src="./main.js"></script>
 </body>
 
